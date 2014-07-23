@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.0'
+gem "bootstrap-sass", "~> 3.1.1.0"
 
 group :development, :test do
    gem 'sqlite3', '1.3.9'
@@ -9,6 +10,7 @@ group :development, :test do
    gem 'spork-rails', '4.0.0'
    gem 'guard-spork', '1.5.0'
    gem 'childprocess', '0.5.3'
+
 end
 
 group :test do
