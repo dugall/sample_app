@@ -8,8 +8,4 @@ class CreateMicroposts < ActiveRecord::Migration
     end
     add_index :microposts, [:user_id, :created_at]
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> following-users
