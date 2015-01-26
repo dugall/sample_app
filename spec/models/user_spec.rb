@@ -17,8 +17,6 @@ describe User do
   it { should respond_to(:authenticate) }
   it { should respond_to(:admin) }
   it { should respond_to(:microposts) }
-<<<<<<< HEAD
-=======
   it { should respond_to(:feed) }
   it { should respond_to(:relationships) }
   it { should respond_to(:followed_users) }
@@ -26,8 +24,6 @@ describe User do
   it { should respond_to(:followers) }
   it { should respond_to(:following?) }
   it { should respond_to(:follow!) }
->>>>>>> following-users
-
   it { should be_valid }
   it { should_not be_admin }
 
@@ -159,8 +155,6 @@ describe User do
       its(:feed) { should_not include(unfollowed_post) }
     end
   end
-<<<<<<< HEAD
-=======
 
   describe "following" do
     let(:other_user) { FactoryGirl.create(:user) }
@@ -184,5 +178,4 @@ describe User do
       its(:followed_users) { should_not include(other_user) }
     end
   end
->>>>>>> following-users
 end
